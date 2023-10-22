@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ШахрайFinder</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wraper">
+		<div class="fon">
+			<div class="circle" id="h"></div>
+			<div class="circle" id="j"></div>
+			<div class="oval"></div>
+		</div>
+		<img class="logo" src="/img/logo.png" alt="logo" width="15%" height="25%">
+		<div class="osn">
+			<h3>Доброго дня! Вітаємо Вас у</h3>
+			<h1>“Шахрай Finder”!</h1>
+			<h2>Будь ласка, виберіть потрібну Вам функцію</h2>
+		</div>
+		<div class="card1">
+			<div class="textblok">
+				<div class="blok1">
+					<h2>При натисканні кнопки нижче введіть номер телефону, на який ви хочете подати скаргу або повідомити про шахрайство</h2>
+				</div>
+				<a href="#info">
+					<div class="blok2">
+						<h2>Інформація до скарги </h2>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="card2">
+			<div class="textblok28">
+				<div class="blok5">
+					<h2>При натисканні кнопки нижче введіть сайт, на який ви хочете подати скаргу або повідомити про шахрайство
+					</h2>
+				</div>
+				<a href="#info">
+					<div class="blok6">
+						<h2>Інформація до скарги </h2>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="bottn">
+				<input type="text" id="search" placeholder="Знайти номер телефону/ сайт">
+				<button id="searchButton">Пошук</button>
+				<a href="#">
+					<div class="support">
+						<h2>На психолога:)</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="info" id="info">
+			<div class="wblok"></div>
+			<div class="menu">
+				<h2>Розкажіть деталіьніше про це шахрайство</h2>
+				<input type="text" id="number" placeholder="Номер або посилання на сайт">
+				<input type="text" id="description" placeholder="Опис шахрайства">
+				<label for="photoUpload" class="custom-file-upload">
+					Завантажити файл
+				</label>
+				<input class="non" type="file" id="photoUpload" accept="image/*" onchange="loadImage(event)">
+				<img id="imagePreview" src="#" alt="" style="max-width: 480px; max-height: 140px;">
+				<button id="saveButton">Зберегти</button>
+			</div>
+		</div>
+	</div>
+	<div class="ip">
+		<!-- <div class="wblokc"></div> -->
+		<div class="bloku">
+			<ul id="dataList"></ul>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
